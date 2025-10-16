@@ -1,14 +1,3 @@
-# Django_API
-# http://localhost:8000/auth/register/
- # /auth/register/
- #  /auth/login/
- # /auctions/
- # /auctions/<id>/bid/
- # /auctions/active/
- # /admin/auctions/
-
-
-
 # 🧾 Bidding Platform — Backend (Django REST Framework + SQLite)
 
 Project Overview
@@ -67,6 +56,8 @@ python manage.py migrate
 python manage.py runserver
 ```
 Server URL → http://localhost:8000
+
+ http://localhost:8000/auth/register/   like
 
 ## URL Structure Overview
 

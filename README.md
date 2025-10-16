@@ -19,7 +19,21 @@ The system automatically closes auctions and determines the winner
 - User Roles: Admin & Buyer  
 - Bid Rules: Must be higher than current highest + min_increment  
 - Automatic auction closure  
-- Winner determination (highest valid bid >= reserve price)  
+- Winner determination (highest valid bid >= reserve price)
+
+# create project dir and activate venv
+mkdir bidding_platform
+cd bidding_platform
+python -m venv venv
+source venv/bin/activate        # on Windows use `venv\Scripts\activate`
+
+# install packages
+pip install django djangorestframework djangorestframework-simplejwt
+
+# create django project and app
+django-admin startproject bidding_platform .
+python manage.py startapp auctions
+
 
 ## Project Setup Instructions
 
